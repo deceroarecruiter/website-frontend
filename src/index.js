@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from 'react-router-dom';
 
+const loadingMarkup = (
+  <div className="py-4 text-center">
+    <h3>Loading..</h3>
+  </div>
+)
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router fallback={loadingMarkup}>
+    <React.StrictMode>
+     
+      <App />
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 

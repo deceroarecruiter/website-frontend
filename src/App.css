@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+html{
+
+  background: rgb(35,37,41);
+background: linear-gradient(36deg, rgba(35,37,41,1) 29%, rgba(45,45,47,1) 56%, rgba(88,86,88,1) 99%, rgba(184,179,179,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:inline-block;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  overflow-x:hidden;  
+  
 }
+/*html{
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/FondoLarge.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-attachment: fixed;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}*/
+
+
+
+
+/*body { 
+  
+  background-image: url(images/FondoLarge.png);
+  background-color: #464646;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+*/
+
+
+.logotipo-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  padding-top: 100px;
+  padding-left: 350px;
+  flex-wrap: wrap;
+ 
+ 
+ 
+
+  
+}
+
+
+.logoL{
+  position: relative;
+ width: 500px;
+}
+
+
+
+
+.logo3D{
+  padding-left: 500px;
+  padding-bottom: 10px;
+ position: absolute;
+  float: left;
+  bottom: 0;
+  width: 1000px;
+  display: flex;
+}
+
+.circulo{
+
+  z-index: 1;
+  position: relative;
+}
+
+.texto1{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
   color: white;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  top:10px;
+  right: 70px;
+}
+span {
+  display: flex;
+  justify-content: center;
+}
+.progreso{
+  padding-left: 200px;
+ padding-top:10px ;
+  display: flex;
+  justify-content: flex-start;
+
+
+ }
+
+
+/*-----------------------------------------------media queries 480px--------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+  .logoL {
+    padding-right: 50px;
+    margin:0;
+    width: 300px;
+  }
+  .logotipo-container{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+
+
+
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+@media only screen and (max-width: 480px) {
+  .logo3D {
+    width: 500px;
+    z-index: -1;
+    
+  }
+
+  .logotipo3d{
+    display: flex;
+    justify-content:center;
+    min-width:20%;
+  
+  
+  }
+ 
+/*---------------------------texto central---------------------*/
+  @media only screen and (max-width: 480px) {
+
+.circulo{
+  width: 100px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.texto1{
+  
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  top:40px;
+  right: 150px;
+}
+.progreso{
+  padding-left: 100px;
+  padding-top:100px ;
+   display: flex;
+   justify-content: center;
+ 
+ 
   }
-  to {
-    transform: rotate(360deg);
+
+}
+}
+
+/*------------------------------------------------media queries 768px-------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+  .logoL {
+    padding-right: 300px;
+    width: 400px;
+    padding-bottom: 100px;
+  }
+  .logotipo-container{
+
+    top: 200px;
+
+
+
+  }
+  .logo3D{
+    padding-left: 0px;
+    position: relative;
+    bottom: 180px;
+    display: flex;
+    justify-content:center;
+    left:-260px;
+    max-width: 500%;
   }
 }
+  
+
+.logotipo-container{
+  display: flex;
+  justify-content:center;
+  max-width: 38%;
+}
+
+.progreso{
+    display: flex;
+    justify-content:center;
+    max-width: 40%;
+    padding-bottom: 100px;
+
+}
+
