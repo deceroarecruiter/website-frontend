@@ -6,21 +6,21 @@ import circulo from "../images/Circulo.svg";
 
 const Hero = () => {
   return (
-    <div className="overlay">
-      <section class="logotipo-container">
-        <img src={logo} alt="logo" class="logoL" />
+    <div className="content-web">
+      <section className="logotipo-container">
+        <img src={logo} alt="logo" className="logoL" />
       </section>
 
      <div className="prueba">
       <section className="progreso">
         <img src={circulo} alt="logo" className="circulo" />
-        <h1 class="texto1">
+        <h1 className="texto1">
           EN <span>PROGRESO</span>
         </h1>
       </section>
 
-      <section className="logotipo3d">
-        <img src={logo3d} alt="logo" className="logo3D" />
+      <section className="logotipo3d-container">
+        <img src={logo3d} alt="logo2" className="logo3D" />
       </section>
       </div>
     </div>
