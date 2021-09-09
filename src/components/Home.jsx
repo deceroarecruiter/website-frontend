@@ -4,7 +4,7 @@ import logo from "../images/Logo1.svg";
 import logo3d from "../images/Logo3D.png";
 import circulo from "../images/Circulo.svg";
 
-const Hero = () => {
+const Home = () => {
   return (
     <div className="content-web">
       <section className="logotipo-container">
@@ -27,4 +27,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
